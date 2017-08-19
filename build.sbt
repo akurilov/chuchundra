@@ -17,5 +17,6 @@ lazy val root = (project in file("."))
 			"com.typesafe.akka" %% "akka-stream" % akkaVersion,
 			"com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
 			"org.scalatest" %% "scalatest" % "3.0.1" % Test
-		)
+		),
+		mainClass := Some("com.github.akurilov.chuchundra.HttpServer")
 	)
